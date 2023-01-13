@@ -1,0 +1,24 @@
+
+.footer {
+    position: sticky;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.dev {
+    font-size: 9px!important;
+}
+
+strong{
+    color: rgb(190, 203, 16);
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+}
+
+.text-tareas{
+    color: rgb(174, 174, 174);
+}

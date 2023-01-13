@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Javsascript Task App</title>
-    <!-- BOOTSTRAP 4 BOOTSWATCH LUX THEME -->
+    <title>Tareitas</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="bg-dark">
 
-    <!-- NAVIGATION -->
-    <nav class="navbar navbar-light bg-light">
+    <!-- Navegacion -->
+    <nav class="navbar navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Tasks App</a>
+        <a class="navbar-brand" href="#"><h4>Cargá tus tareas del día:</h4></a>
+      </div>
+      <div class="container">
+        <p class="dev">Desarrollada por<strong> Dami Ferrara </strong></p>
       </div>
     </nav>
 
@@ -20,26 +27,27 @@
         <div class="col-md-4">
 
           <div class="card">
-            <div class="card-body">
-              <!-- FORM TO ADD TASKS -->
-              <form id="formTask">
-                <div class="form-group">
-                  <input type="text" id="title" placeholder="Add A Todo" class="form-control">
+            <div class="card-body bg-dark">
+              <!-- Formulario -->
+              <form id="formTask" class="bg-dark">
+                <div class="form-group bg-dark">
+                  <input type="text" id="title" placeholder="Agregá tu To Do" class="form-control bg-dark">
                 </div>
-                <div class="form-group">
-                  <textarea id="description" cols="30" rows="10" class="form-control"></textarea>
+                <div class="form-group bg-dark">
+                  <textarea id="description" cols="30" rows="10" placeholder="Explayate acá :)" class="form-control bg-dark"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Save</button>
+                <button type="submit" class="btn btn-primary btn-block">Guardar</button>
               </form>
             </div>
           </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-8 ">
           <div id="tasks"></div>
         </div>
       </div>
     </div>
+    
     <script src="./app.js"></script>
   </body>
 </html>
