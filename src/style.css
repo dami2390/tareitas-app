@@ -22,3 +22,9 @@ h4 {
 .text-tareas{
     color: rgb(174, 174, 174);
 }
+input{
+    color: rgb(174, 174, 174) !important
+}
+textarea{
+    color: rgb(174, 174, 174) !important
+}
